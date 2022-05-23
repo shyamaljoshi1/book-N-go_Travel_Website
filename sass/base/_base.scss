@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 10px; here px will force user brower to use this font size only even if they zoom in or zoom out*/
+    font-size: 62.5%; /*instead we use % here so by default size is 16px and 62.5% of 16px is 10px*/
+}
+
+body {
+    box-sizing: border-box;
+}
