@@ -4,7 +4,7 @@
     -moz-perspective: 150rem;
     
     position: relative;
-    transition: transform 8s;
+    transition: 8s ease-in-out;
     height: 50rem;
 
     &__side{
@@ -19,7 +19,7 @@
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         overflow: hidden;
-        transition: all .8sec ease;
+        transition: transform .8s ease;
 
         &--front{
             background-color: $color-white;
@@ -33,7 +33,7 @@
         }
     }
     &:hover &__side--back{
-        transform: rotateY(0);
+        transform: rotateY(0deg);
     }
     &:hover &__side--front{
         transform: rotateY(-180deg);
